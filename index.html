@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relativistično sledenje žarkov</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="main_container">
+        <canvas id="vis_canvas" tabindex="0"></canvas>
+        <div id="sidebar">
+            <div class="settings_title">Parametri</div>
+
+            <div class="settings_section">Akrecijski disk</div>
+            <div class="slider_group">
+                <label>Temperatura</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="temp_slider">
+
+				<label>Rdeči premik</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="redshift_slider">
+
+                <label>Faktor usmerjanja</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="beaming_slider">
+
+                <label>Zunanji radij</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="r_outer_slider">
+            </div>
+
+            <div class="settings_section">Črna luknja</div>
+            <div class="slider_group">
+                <label>Masa</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="rs_slider">
+            </div>
+
+            <div class="settings_section">Sledenje žarkov</div>
+            <div class="slider_group">
+                <label>Min korak</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="step_slider">
+            </div>
+            <div class="slider_group">
+                <label>Resolucija</label>
+                <input type="range" min="0" max="100" value="0" class="slider" id="resolution_slider">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
